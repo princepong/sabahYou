@@ -1,0 +1,27 @@
+/* Extra small devices (less than 576px) */
+@media (max-width: 575.98px) {
+    .col-sm-12 {
+      background-color: red;
+    }
+  }
+  
+  /* Small devices (576px and up) */
+  @media (min-width: 576px) {
+    .col-sm-12 {
+      background-color: blue;
+    }
+  }
+  
+  /* Medium devices (768px and up) */
+  @media (min-width: 768px) {
+    .col-md-6 {
+      background-color: green;
+    }
+  }
+  
+  /* Large devices (992px and up) */
+  @media (min-width: 992px) {
+    .col-lg-4 {
+      background-color: orange;
+    }
+  }
