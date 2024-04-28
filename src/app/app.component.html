@@ -1,6 +1,6 @@
 <nav class="navbar">
   <div class="navbar-brand">
-    <a routerLink="/">My App</a>
+    <a routerLink="/">Sabah You</a>
   </div>
   <div class="navbar-toggle" (click)="toggleMenu()">
     <span class="icon-bar"></span>
@@ -15,9 +15,9 @@
         <span class="icon-bar"></span>
       </div>
     </li>
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/first-component">first</a></li>
-    <li><a routerLink="/second-component">second</a></li>
+    <li><a routerLink="/">{{home}}</a></li>
+    <li><a routerLink="/first-component">{{firstPage}}</a></li>
+    <li><a routerLink="/second-component">{{secondPage}}</a></li>
   </ul>
 </nav>
 <!-- The routed views render in the <router-outlet>-->

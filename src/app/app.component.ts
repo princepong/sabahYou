@@ -18,6 +18,8 @@ export class AppComponent {
     this.isMenuOpen = !this.isMenuOpen;
   }
   title = 'my-app';
-
+  home = '首頁';
+  firstPage = '網站地圖';
+  secondPage = '聯絡我們';
 
 }
