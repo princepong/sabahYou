@@ -1,3 +1,4 @@
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -42,6 +43,12 @@
     color: white;
     text-decoration: none;
   }
+
+  @media (min-width: 769px) {
+    .navbar {
+      display: none;
+    }
+  }
   
   @media (max-width: 768px) {
     .navbar-menu {
@@ -65,5 +72,76 @@
   
     .navbar-menu.open li {
       margin: 10px 0;
+    }
+  }
+
+  .r-contact{
+    grid-area: r-contact;
+    background-color: #e222bf;
+    color: white;
+  }
+
+  .r-button{
+    grid-area: r-button;
+    background-color: #7760d0;
+    color: white;
+  }
+
+  .r-logo{
+    grid-area: r-logo;
+    background-color: #2138bc;
+    color: white;
+  }
+
+  .r-slogon{
+    grid-area: r-slogon;
+    background-color: #1dd5cf;
+    color: white;
+  }
+
+  .r-content{
+    grid-area: r-content;
+    background-color: #41c724;
+    color: white;
+  }
+
+  .r-map{
+    grid-area: r-map;
+    background-color: #d5de24;
+    color: white;
+  }
+
+  .r-plan{
+    grid-area: r-plan;
+    background-color: #b8715b;
+    color: white;
+  }
+
+  .responsiveContainer{
+    display: grid;
+    gap: 5px;
+    margin: 14px;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 1fr 2fr 2fr 1fr 1fr;
+    grid-template-areas: 
+    "r-logo r-contact r-contact r-contact r-button r-button r-button r-button"
+    "r-logo r-slogon r-slogon r-slogon r-plan r-plan r-plan r-plan"
+    "r-logo r-slogon r-slogon r-slogon r-plan r-plan r-plan r-plan"
+    "r-content r-content r-map r-map r-plan r-plan r-plan r-plan"
+    "r-content r-content r-map r-map r-plan r-plan r-plan r-plan";
+  }
+
+  @media (max-width: 768px){
+    .responsiveContainer{
+      grid-template-columns: 1fr;
+      grid-template-rows: 50px 20px 20px 80px 50px 160px 50px;
+      grid-template-areas: 
+      "r-logo"
+      "r-contact"
+      "r-button"
+      "r-slogon"
+      "r-content"
+      "r-map"
+      "r-plan";
     }
   }
