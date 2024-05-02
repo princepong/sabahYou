@@ -1,147 +1,233 @@
-
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px;
-    color: white;
-  }
-  
-  .navbar-brand a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .navbar-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  color: white;
+}
+
+.navbar-brand a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin-left: 10px;
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width: 1025px) {
+  .navbar {
     display: none;
-    cursor: pointer;
   }
-  
-  .icon-bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    background-color: white;
-    margin: 4px 0;
-  }
-  
+}
+
+@media (max-width: 1024px) {
   .navbar-menu {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu.open {
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar-menu li {
-    margin-left: 10px;
-  }
-  
-  .navbar-menu li a {
-    color: white;
-    text-decoration: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 9999;
   }
 
-  @media (min-width: 769px) {
-    .navbar {
-      display: none;
-    }
+  .navbar-menu.open li {
+    margin: 10px 0;
   }
-  
-  @media (max-width: 768px) {
-    .navbar-menu {
-      display: none;
-    }
-  
-    .navbar-toggle {
-      display: block;
-    }
-  
-    .navbar-menu.open {
-      display: flex;
-      flex-direction: column;
-      background-color: #333;
-      position: absolute;
-      top: 0%;
-      left: 0;
-      right: 0;
-      padding: 10px;
-    }
-  
-    .navbar-menu.open li {
-      margin: 10px 0;
-    }
-  }
+}
 
-  .r-contact{
-    grid-area: r-contact;
-    background-color: #e222bf;
-    color: white;
-  }
+/*////////////////////////////////////////////////////*/
 
-  .r-button{
-    grid-area: r-button;
-    background-color: #7760d0;
-    color: white;
-  }
+.r-contact {
+  grid-area: r-contact;
+  /*background-color: #e222bf;*/
+  color: white;
+  display: flex;
+}
 
-  .r-logo{
+.r-contact img {
+  width: 500px;
+  height: auto;
+}
+
+.r-button {
+  grid-area: r-button;
+  background-color: #60d06f;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.r-button button {
+  background-color: #7760d0;
+  color: white;
+  border: none;
+  padding: 10px ;
+  cursor: pointer;
+  font-size: 40px;
+  border-radius: 30px;
+  height: 124px;
+}
+
+.svgButton{
+  width: 40px;
+}
+
+.r-logo, r-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: r-logo;
+  background-color: #2138bc;
+  color: white;
+}
+
+.r-logo img {
+  position: absolute;
+  width: 517px;
+  height: auto;
+  top: 1%;
+  left: -1%;
+}
+
+.r-map img {
+  position: relative;
+  width: 1170px;
+  height: auto;
+  top:-2%;
+  left: 4%;
+}
+
+/*//////////////////////////////////////////*/
+
+@media (max-width: 1024px) {
+  .r-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     grid-area: r-logo;
     background-color: #2138bc;
     color: white;
   }
 
-  .r-slogon{
-    grid-area: r-slogon;
-    background-color: #1dd5cf;
-    color: white;
+  .r-logo img {
+    position: absolute;
+    width: 134px;
+    height: auto;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
-  .r-content{
-    grid-area: r-content;
-    background-color: #41c724;
-    color: white;
+  .r-contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* Optional: center aligns items vertically */
+    width: 100%;
+    /* Ensure the container takes up the full width */
   }
 
-  .r-map{
-    grid-area: r-map;
-    background-color: #d5de24;
-    color: white;
+  .r-contact img {
+    width: 100px;
+    height: auto;
   }
+}
+/*///////////////////////////////////////*/
+.r-slogon {
+  grid-area: r-slogon;
+  background-color: #1dd5cf;
+  color: white;
+}
 
-  .r-plan{
-    grid-area: r-plan;
-    background-color: #b8715b;
-    color: white;
-  }
+.r-content {
+  grid-area: r-content;
+  background-color: #41c724;
+  color: white;
+}
 
-  .responsiveContainer{
-    display: grid;
-    gap: 5px;
-    margin: 14px;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: 1fr 2fr 2fr 1fr 1fr;
-    grid-template-areas: 
-    "r-logo r-contact r-contact r-contact r-button r-button r-button r-button"
-    "r-logo r-slogon r-slogon r-slogon r-plan r-plan r-plan r-plan"
-    "r-logo r-slogon r-slogon r-slogon r-plan r-plan r-plan r-plan"
-    "r-content r-content r-map r-map r-plan r-plan r-plan r-plan"
-    "r-content r-content r-map r-map r-plan r-plan r-plan r-plan";
-  }
+.r-map {
+  grid-area: r-map;
+  background-color: #d5de24;
+  color: white;
+}
 
-  @media (max-width: 768px){
-    .responsiveContainer{
-      grid-template-columns: 1fr;
-      grid-template-rows: 50px 20px 20px 80px 50px 160px 50px;
-      grid-template-areas: 
-      "r-logo"
+.r-plan {
+  grid-area: r-plan;
+  background-color: #b8715b;
+  color: white;
+}
+
+.responsiveContainer {
+  display: grid;
+  gap: 5px;
+  margin: 14px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr 1fr 2fr 2fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "r-logo r-contact r-contact r-contact r-contact r-button r-button r-button"
+    "r-logo r-slogon r-slogon r-slogon r-slogon r-button r-button r-button"
+    "r-logo r-slogon r-slogon r-slogon r-slogon r-plan r-plan r-plan"
+    "r-content r-content r-map r-map r-map r-plan r-plan r-plan"
+    "r-content r-content r-map r-map r-map r-plan r-plan r-plan"
+    "r-content r-content r-map r-map r-map r-plan r-plan r-plan"
+    "r-content r-content r-map r-map r-map r-plan r-plan r-plan";
+}
+
+@media (max-width: 1024px) {
+  .responsiveContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 20px 80px 160px 50px;
+    grid-template-areas:
       "r-contact"
-      "r-button"
       "r-slogon"
       "r-content"
       "r-map"
       "r-plan";
-    }
   }
+
+  .r-button {
+    display: none;
+  }
+}
