@@ -134,8 +134,8 @@
   position: relative;
   width: 640px;
   height: auto;
-  top:-51%;
-  left: 13%;
+  top:-136%;
+  left: 10%;
 }
 
 /*//////////////////////////////////////////*/
@@ -321,14 +321,11 @@ color: black;
   gap: 5px;
   margin: 14px;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 100px 100px 100px 100px;
   grid-template-areas:
     "r-logo r-contact r-contact r-contact r-contact r-button r-button r-button"
     "r-logo r-slogon r-slogon r-slogon r-slogon r-button r-button r-button"
     "r-logo r-slogon r-slogon r-slogon r-slogon r-plan r-plan r-plan"
-    "r-content r-content r-map r-map r-map r-plan r-plan r-plan"
-    "r-content r-content r-map r-map r-map r-plan r-plan r-plan"
-    "r-content r-content r-map r-map r-map r-plan r-plan r-plan"
     "r-content r-content r-map r-map r-map r-plan r-plan r-plan";
 }
 
