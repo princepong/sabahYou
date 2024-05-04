@@ -124,7 +124,7 @@
 
 .r-logo img {
   position: absolute;
-  width: 517px;
+  width: 350px;
   height: auto;
   top: 1%;
   left: -1%;
@@ -155,7 +155,7 @@
     position: absolute;
     width: 134px;
     height: auto;
-    top: 8%;
+    top: 12%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -183,12 +183,92 @@
     top: 0%;
     left:0%;
   }
+
+  .r-slogon ul {
+    font-size: 40px;
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+    padding-top: 16px;
+  }
+  
+  .r-slogon ul div {
+    display:flex;
+    flex-direction: column;
+    align-items: normal !important;
+    
+  }
+  
+  .r-slogon ul div li {
+    padding-right: 0px;
+  
+  }
+  
+  .r-slogon ul div li.one{
+    color: black;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    z-index: 9999 !important;
+  }
+  
+  .r-slogon ul div li.two{
+    color: gray;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 9999 !important;
+  }
+  .r-slogon ul li.three{
+    color: orange;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    z-index: 9999 !important;
+  }
 }
 /*///////////////////////////////////////*/
 .r-slogon {
   grid-area: r-slogon;
   background-color: #1dd5cf;
   color: white;
+}
+
+.r-slogon ul {
+  font-size: 40px;
+  list-style-type: none;
+}
+
+.r-slogon ul div {
+  display: flex;
+  justify-content: flex-start;
+  align-items:end;
+}
+
+.r-slogon ul div li {
+  padding-right: 20px;
+
+}
+
+.r-slogon ul div li.one{
+  color: black;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  z-index: 9999;
+}
+
+.r-slogon ul div li.two{
+  color: gray;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  z-index: 9999;
+}
+.r-slogon ul li.three{
+  color: orange;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  z-index: 9999;
 }
 
 .r-content {
@@ -214,7 +294,7 @@
   gap: 5px;
   margin: 14px;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 1fr 1fr 2fr 2fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 2fr 1fr 1fr 1fr;
   grid-template-areas:
     "r-logo r-contact r-contact r-contact r-contact r-button r-button r-button"
     "r-logo r-slogon r-slogon r-slogon r-slogon r-button r-button r-button"
@@ -228,7 +308,7 @@
 @media (max-width: 1024px) {
   .responsiveContainer {
     grid-template-columns: 1fr;
-    grid-template-rows: 20px 20px 80px 460px 50px;
+    grid-template-rows: 20px 200px 80px 460px 50px;
     grid-template-areas:
       "r-contact"
       "r-slogon"
