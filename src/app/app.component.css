@@ -156,7 +156,7 @@
     width: 134px;
     height: auto;
     top: 12%;
-    left: 50%;
+    left: 55%;
     transform: translate(-50%, -50%);
   }
 
@@ -233,10 +233,26 @@
   }
 
   .vertical-line {
-    border-left: 1px solid white !important; /* Adjust color and width as needed */
+    border-left-color: #f3f3f3 !important;
+  }
+
+  .vertical-line-2 {
+    border-left: 5px solid #f3f3f3; /* Default color for the vertical line */
+    height: 100%; /* Adjust height as needed */
   }
 }
+
 /*///////////////////////////////////////*/
+.vertical-line {
+  border-left: 5px solid #f3f3f3; /* Adjust color and width as needed */
+  height: 100%; /* Adjust height as needed */
+}
+.vertical-line-3 {
+  border-left: 5px solid #ff0202; /* Adjust color and width as needed */
+  height: 100%; /* Adjust height as needed */
+  left: 100px;
+}
+
 .zIndex{
   position: relative;
   z-index: 9999 !important;
@@ -333,7 +349,7 @@ color: black;
 .r-plan ul li{
   display: flex;
   flex-direction: row;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .r-plan ul li div{
@@ -373,10 +389,8 @@ color: black;
   }
 }
 
-.vertical-line {
-  border-left: 5px solid #f3f3f3; /* Adjust color and width as needed */
-  height: 100%; /* Adjust height as needed */
-}
+
+
 
 .horizontal-line {
   border-top: 1px solid #f3f3f3; /* Adjust color and width as needed */
@@ -390,7 +404,8 @@ ul {
 
 ul li {
   position: relative;
-  padding-left: 30px;
+  padding-left: 15px;
+  padding-right: 5px;
 }
 
 ul li::before {
