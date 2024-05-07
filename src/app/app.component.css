@@ -85,13 +85,15 @@
 }
 
 .r-contact img {
+  position: relative;
   width: 500px;
   height: auto;
+  left: 40px;
 }
 
 .r-button {
   grid-area: r-button;
-  background-color: #60d06f;
+  background-color: #f3f3f3;
   color: white;
   display: flex;
   justify-content: space-around;
@@ -99,13 +101,12 @@
 }
 
 .r-button button {
-  background-color: #7760d0;
+  background-color: #f3f3f3;
   color: white;
   border: none;
   padding: 10px ;
   cursor: pointer;
   font-size: 20px;
-  border-radius: 30px;
 }
 
 .svgButton{
@@ -117,7 +118,7 @@
   justify-content: center;
   align-items: center;
   grid-area: r-logo;
-  background-color: #2138bc;
+  /*background-color: #2138bc;*/
   color: white;
 }
 
@@ -146,7 +147,7 @@
     align-items: center;
 
     grid-area: r-logo;
-    background-color: #2138bc;
+    /*background-color: #2138bc;*/
     color: white;
   }
 
@@ -239,7 +240,7 @@
 
 .r-slogon {
   grid-area: r-slogon;
-  background-color: #1dd5cf;
+  /*background-color: #1dd5cf;*/
   color: white;
 }
 
@@ -283,8 +284,8 @@
 
 .r-content {
   grid-area: r-content;
-  background-color: #41c724;
-  color: white;
+  /*background-color: #41c724;*/
+  color: #5a4e4e;
 }
 
 .r-content ul{
@@ -309,14 +310,14 @@ color: black;
 
 .r-map {
   grid-area: r-map;
-  background-color: #d5de24;
-  color: white;
+  /*background-color: #d5de24;*/
+  color: #5a4e4e;
 }
 
 .r-plan {
   grid-area: r-plan;
-  background-color: #b8715b;
-  color: white;
+  /*background-color: #b8715b;*/
+  color: #5a4e4e;
 }
 
 .r-plan ul{
