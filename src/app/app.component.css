@@ -6,7 +6,7 @@
   background-color: #333;
   color: #333;
   padding: 10px;
-  z-index: 9999;
+  z-index: 9990;
 }
 
 .navbar-brand a {
@@ -70,7 +70,7 @@
     left: 0;
     right: 0;
     padding: 10px;
-    z-index: 9999;
+    z-index: 9990;
   }
 
   .navbar-menu.open li {
@@ -157,6 +157,11 @@
     top: 12%;
     left: 51%;
     transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+
+  .r-logo img.open{
+    display: none;
   }
 
   .r-contact {
