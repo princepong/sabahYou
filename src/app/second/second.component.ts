@@ -1,16 +1,15 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-second',
-  //standalone: true,
-  //imports: [CommonModule],
   templateUrl: './second.component.html',
   styleUrl: './second.component.css'
 })
-export class SecondComponent {
-  
+export class SecondComponent implements OnInit {
+  constructor(private translate: TranslateService) {}
+
+  ngOnInit() {}
 
   isMenuOpen = false;
 
